@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Sora&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body{
+    background-color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Sora', sans-serif;
+}
+
+header{
+    background-image: url('../img/bgheader.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 33%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 96px;
+}
+
+.green{
+    color: green;
+}
+.orange{
+    color: orange;
+}
+.red{
+    color: red;
+}
+
+.destaque{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-pizzas{
+    padding: 80px;
+}
+
+.row1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row2{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizzas{
+    width: 256px;
+    height: 275px;
+    background-color: #FEF6F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 55px;
+    margin: 40px;
+}
+
+.image-pizza img{
+    padding: 10px;
+    position: relative;
+    bottom: 20px;
+}
+
+.text{
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+    padding: 10px;
+}
+
+.text h1, .text p{
+    padding: 10px;
+}
+
+.text h1{
+    font-size: 18px;
+}
+
+.text p{
+    font-size: 14px;
+}
+
+.price{
+    position: relative;
+    bottom: 60px;
+    padding: 10px;
+    font-size: 32px;
+    font-style: bold;
+    font-weight: 400;
+}
+
+.pizzas a{
+    position: relative;
+    bottom: 45px;
+    padding: 16px 50px;
+    text-align: center;
+    background-color: #FFA200;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+#mostrarmais{
+    margin: 30px;
+    color: black;
+}
+
+#mostrarmenos{
+    display: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
