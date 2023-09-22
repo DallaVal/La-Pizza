@@ -13,7 +13,7 @@ body{
 }
 
 header{
-    background-image: url('../img/bgheader.png');
+    background-image: url('../img/header/bgheader.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 33%;
@@ -121,6 +121,12 @@ header{
     border-radius: 25px;
     text-decoration: none;
     color: black;
+    transition: 0.5s;
+}
+
+.pizzas a:hover{
+    background-color: #000000;
+    color: white;
 }
 
 #mostrarmais{
@@ -128,24 +134,131 @@ header{
     color: black;
 }
 
+#mostrarmais:hover{
+    color: #000000D4;
+}
+
+
 #mostrarmenos{
     display: none;
     color: black;
 }
 
+#mostrarmenos:hover{
+    color: #000000D4;
+}
 
 
+.sobre{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 
+}
 
+.align-sobre{
+    display: flex;
+    width: 66%;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.descricao-sobre{
+    height: 501px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    gap: 25px;
+}
 
+#ler-mais{
+    width: 140px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #FFA200;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.5s;
 
+}
 
-
+#ler-mais:hover{
+    background-color: black;
+    color: white;
+}
 
 footer{
+    margin-top: 20px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #FEF6F4;
+}
+
+@media (max-width: 1600px){
+    .destaque{
+        margin-bottom: 500px;
+    }
+
+    .sobre{
+        margin-top: -470px;
+    }
+}
+
+@media (max-width: 980px) {
+
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 34px;
+        background-size: 100% 100%;
+        height: 300px;
+    }
+
+    .destaque{
+        margin-top: 1250px;
+    }
+
+    .row1, .row2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .align-sobre{
+        margin-right: 140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .align-sobre a{
+        margin-left: 70px;
+    }
+
+    .text-sobre{
+        width: 300px;
+        text-align: center;
+    }
+
+    .titulo-sobre h1{
+        width: 300px;
+        text-align: center;
+    }
+
+    .text-sobre br{
+        display: none;
+    }
+
+    .align-sobre img{
+        display: none;
+    }
 }
